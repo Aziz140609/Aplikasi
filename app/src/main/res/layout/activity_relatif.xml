@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainScroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    tools:context=".RelatifActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="20dp">
+
+        <ImageView
+            android:id="@+id/imgHeader"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/form" />
+
+        <TextView
+            android:id="@+id/tvJudul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgHeader"
+            android:textAlignment="center"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="@color/title_blue"
+            android:text="Form Pendaftaran"
+            android:layout_marginTop="10dp" />
+
+        <!-- EditText Nama -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvJudul"
+            android:layout_marginTop="16dp"
+            android:hint="Nama Lengkap"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxStrokeWidth="1.5dp"
+            app:boxStrokeWidthFocused="2dp"
+            app:boxStrokeColor="@color/card_blue"
+            app:boxStrokeErrorColor="@color/title_blue">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_primary"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- EditText Nomor -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutNomor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layoutNama"
+            android:layout_marginTop="10dp"
+            android:hint="Nomor Handphone"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxStrokeWidth="1.5dp"
+            app:boxStrokeWidthFocused="2dp"
+            app:boxStrokeColor="@color/card_blue"
+            app:boxStrokeErrorColor="@color/title_blue">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etNomor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_primary"
+                android:inputType="phone" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- EditText Alamat -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutAlamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layoutNomor"
+            android:layout_marginTop="10dp"
+            android:hint="Alamat Lengkap"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxStrokeWidth="1.5dp"
+            app:boxStrokeWidthFocused="2dp"
+            app:boxStrokeColor="@color/card_blue"
+            app:boxStrokeErrorColor="@color/title_blue">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etAlamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_primary"
+                android:inputType="textPostalAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Agama -->
+        <TextView
+            android:id="@+id/tvAgama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agama"
+            android:textColor="@color/card_blue"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/layoutAlamat" />
+
+        <Spinner
+            android:id="@+id/spAgama"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/tvAgama"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/spinner_background"
+            android:popupBackground="@color/white_black"
+            android:spinnerMode="dropdown"
+            android:entries="@array/agama"
+            android:paddingHorizontal="12dp"
+            android:textAlignment="center" />
+
+        <!-- Jenis Kelamin -->
+        <TextView
+            android:id="@+id/tvKelamin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jenis Kelamin"
+            android:textColor="@color/card_blue"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_below="@id/spAgama"
+            android:layout_margin="10dp" />
+
+        <RadioGroup
+            android:id="@+id/rgKelamin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvKelamin"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbLaki"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Laki-Laki"
+                android:textColor="@color/title_blue"
+                android:background="@drawable/radio_bg"
+                android:button="@null"
+                android:padding="10dp"
+                android:layout_marginEnd="20dp" />
+
+            <RadioButton
+                android:id="@+id/rbPerempuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Perempuan"
+                android:textColor="@color/title_blue"
+                android:background="@drawable/radio_bg"
+                android:button="@null"
+                android:padding="10dp" />
+        </RadioGroup>
+
+        <!-- Hobi -->
+        <TextView
+            android:id="@+id/tvHobi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hobi"
+            android:textColor="@color/card_blue"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_below="@id/rgKelamin"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp" />
+
+        <CheckBox
+            android:id="@+id/cbMembaca"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Membaca"
+            android:textColor="@color/title_blue"
+            android:background="@drawable/checkbox_bg"
+            android:button="@null"
+            android:padding="10dp"
+            android:layout_below="@id/tvHobi"
+            android:layout_marginStart="10dp" />
+
+        <CheckBox
+            android:id="@+id/cbMakan"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Makan"
+            android:textColor="@color/title_blue"
+            android:background="@drawable/checkbox_bg"
+            android:button="@null"
+            android:padding="10dp"
+            android:layout_below="@id/cbMembaca"
+            android:layout_marginStart="10dp" />
+
+        <CheckBox
+            android:id="@+id/cbTidur"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Tidur"
+            android:textColor="@color/title_blue"
+            android:background="@drawable/checkbox_bg"
+            android:button="@null"
+            android:padding="10dp"
+            android:layout_below="@id/cbMakan"
+            android:layout_marginStart="10dp" />
+
+        <CheckBox
+            android:id="@+id/cbOlahraga"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Olahraga"
+            android:textColor="@color/title_blue"
+            android:background="@drawable/checkbox_bg"
+            android:button="@null"
+            android:padding="10dp"
+            android:layout_below="@id/cbTidur"
+            android:layout_marginStart="10dp" />
+
+        <!-- Tombol Simpan -->
+        <Button
+            android:id="@+id/btnSimpan"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:layout_centerHorizontal="true"
+            android:text="Simpan"
+            android:backgroundTint="@color/card_blue"
+            android:layout_below="@+id/cbOlahraga"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:textColor="@color/white_black"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</ScrollView>

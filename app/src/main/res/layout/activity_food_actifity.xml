@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:padding="12dp"
+    tools:context=".FoodActifity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/plate"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"/>
+
+        <!-- Judul -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order Food / Drink"
+            android:textAlignment="center"
+            android:textColor="@color/title_blue"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp" />
+
+        <!-- Nama Customer -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            app:cardCornerRadius="14dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@color/card_light">
+
+            <EditText
+                android:id="@+id/etNamaCustomer"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@null"
+                android:backgroundTint="@null"
+                android:hint="Nama Customer"
+                android:padding="14dp"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/title_blue"
+                android:textSize="16sp" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Section: Makanan -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🍜 Makanan"
+            android:textColor="@color/title_blue"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginVertical="8dp" />
+
+        <!-- 🔸 Bakso -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="@color/card_light"
+            android:layout_marginVertical="6dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/imgBakso"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/bakso"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:background="@drawable/rounded_image_bg" />
+
+                <TextView
+                    android:id="@+id/tvNamaBakso"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Bakso"
+                    android:textColor="@color/title_blue"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/imgBakso"
+                    app:layout_constraintTop_toTopOf="@id/imgBakso" />
+
+                <TextView
+                    android:id="@+id/tvHargaBakso"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp 15.000"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_primary"
+                    app:layout_constraintStart_toEndOf="@id/imgBakso"
+                    app:layout_constraintTop_toBottomOf="@id/tvNamaBakso"
+                    android:layout_marginLeft="10dp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="3dp"
+                    app:cardBackgroundColor="@color/card_light"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvHargaBakso"
+                    android:layout_marginTop="10dp">
+
+                    <EditText
+                        android:id="@+id/etJmlBakso"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:backgroundTint="@null"
+                        android:hint="Jumlah"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColor="@color/text_primary"
+                        android:textColorHint="@color/title_blue" />
+                </androidx.cardview.widget.CardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 🔸 Mie Ayam -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="@color/card_light"
+            android:layout_marginVertical="6dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/imgMieAyam"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/mieayam"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:background="@drawable/rounded_image_bg" />
+
+                <TextView
+                    android:id="@+id/tvNamaMieAyam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Mie Ayam"
+                    android:textColor="@color/title_blue"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/imgMieAyam"
+                    app:layout_constraintTop_toTopOf="@id/imgMieAyam" />
+
+                <TextView
+                    android:id="@+id/tvHargaMieAyam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp 12.000"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_primary"
+                    app:layout_constraintStart_toEndOf="@id/imgMieAyam"
+                    app:layout_constraintTop_toBottomOf="@id/tvNamaMieAyam"
+                    android:layout_marginLeft="10dp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="3dp"
+                    app:cardBackgroundColor="@color/card_light"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvHargaMieAyam"
+                    android:layout_marginTop="10dp">
+
+                    <EditText
+                        android:id="@+id/etJmlMieAyam"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:backgroundTint="@null"
+                        android:hint="Jumlah"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColor="@color/text_primary"
+                        android:textColorHint="@color/title_blue" />
+                </androidx.cardview.widget.CardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Section Minuman -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🥤 Minuman"
+            android:textColor="@color/title_blue"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginVertical="8dp" />
+
+        <!-- 🔹 Teh -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="@color/card_light"
+            android:layout_marginVertical="6dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/imgTeh"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/teh"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:background="@drawable/rounded_image_bg" />
+
+                <TextView
+                    android:id="@+id/tvNamaTeh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Teh"
+                    android:textColor="@color/title_blue"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    app:layout_constraintStart_toEndOf="@id/imgTeh"
+                    app:layout_constraintTop_toTopOf="@id/imgTeh" />
+
+                <TextView
+                    android:id="@+id/tvHargaTeh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp 5.000"
+                    android:textColor="@color/text_primary"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    app:layout_constraintStart_toEndOf="@id/imgTeh"
+                    app:layout_constraintTop_toBottomOf="@id/tvNamaTeh" />
+
+                <Spinner
+                    android:id="@+id/spTeh"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:backgroundTint="@color/title_blue"
+                    android:entries="@array/dinginGak"
+                    app:layout_constraintStart_toEndOf="@id/imgTeh"
+                    app:layout_constraintEnd_toStartOf="@id/etCardTeh"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/etCardTeh"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="3dp"
+                    app:cardBackgroundColor="@color/card_light"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvHargaTeh"
+                    android:layout_marginTop="10dp">
+
+                    <EditText
+                        android:id="@+id/etJmlTeh"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:backgroundTint="@null"
+                        android:hint="Jumlah"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColor="@color/text_primary"
+                        android:textColorHint="@color/title_blue" />
+                </androidx.cardview.widget.CardView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 🔹 Air Jeruk -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="@color/card_light"
+            android:layout_marginVertical="6dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/imgAirJeruk"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/airjeruk"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:background="@drawable/rounded_image_bg" />
+
+                <TextView
+                    android:id="@+id/tvNamaAirJeruk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Air Jeruk"
+                    android:textColor="@color/title_blue"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    app:layout_constraintStart_toEndOf="@id/imgAirJeruk"
+                    app:layout_constraintTop_toTopOf="@id/imgAirJeruk" />
+
+                <TextView
+                    android:id="@+id/tvHargaAirJeruk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp 7.000"
+                    android:textColor="@color/text_primary"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    app:layout_constraintStart_toEndOf="@id/imgAirJeruk"
+                    app:layout_constraintTop_toBottomOf="@id/tvNamaAirJeruk" />
+
+                <Spinner
+                    android:id="@+id/spAirJeruk"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:backgroundTint="@color/title_blue"
+                    android:entries="@array/dinginGak"
+                    app:layout_constraintStart_toEndOf="@id/imgAirJeruk"
+                    app:layout_constraintEnd_toStartOf="@id/etCardAirJeruk"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/etCardAirJeruk"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="3dp"
+                    app:cardBackgroundColor="@color/card_light"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvHargaAirJeruk"
+                    android:layout_marginTop="10dp">
+
+                    <EditText
+                        android:id="@+id/etJmlAirJeruk"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:backgroundTint="@null"
+                        android:hint="Jumlah"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textColor="@color/text_primary"
+                        android:textColorHint="@color/title_blue" />
+                </androidx.cardview.widget.CardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 🔹 Tombol -->
+        <Button
+            android:id="@+id/btnPesan"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Pesan Sekarang"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:backgroundTint="@color/title_blue"
+            android:textColor="@color/card_light"
+            android:layout_marginVertical="14dp"
+            android:layout_marginHorizontal="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:background="@drawable/btn_round_blue" />
+
+    </LinearLayout>
+</ScrollView>

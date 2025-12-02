@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Saat Spinner ditekan atau fokus -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFF"/>
+            <stroke android:width="2dp" android:color="#91ECFF"/> <!-- biru muda -->
+            <corners android:radius="10dp"/>
+        </shape>
+    </item>
+
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFF"/>
+            <stroke android:width="2dp" android:color="#91ECFF"/> <!-- biru muda -->
+            <corners android:radius="10dp"/>
+        </shape>
+    </item>
+
+    <!-- Saat tidak fokus -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/bg_gambar"/>
+            <stroke android:width="1.5dp" android:color="#337EA6"/> <!-- biru agak tua -->
+            <corners android:radius="10dp"/>
+        </shape>
+    </item>
+</selector>

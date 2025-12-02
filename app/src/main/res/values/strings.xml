@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">FristAPK</string>
+    <string name="nota_transaksi">Nota Transaksi</string>
+
+    <string-array name="agama">
+        <item>Islam</item>
+        <item>Kristen</item>
+        <item>Katolik</item>
+        <item>Hindu</item>
+        <item>Budha</item>
+        <item>Konghuchu</item>
+    </string-array>
+
+    <string-array name="dinginGak">
+        <item>Dingin</item>
+        <item>Panas</item>
+    </string-array>
+
+    <string-array name="Suhu">
+        <item>Celcius </item>
+        <item>Kelvin</item>
+        <item>Fahrenheit</item>
+    </string-array>
+
+    <string name="email">azizachmadjuniar@gmail.com</string>
+
+
+</resources>
+

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="bg_gambar">#111827</color>
+
+    <color name="black_white">#FFFFFFFF</color>
+
+    <color name="white_black">#FF000000</color>
+
+    <color name="coba">#000000</color>
+
+    <!-- Background dasar aplikasi (dark) -->
+    <color name="bg_main">#1E1E1E</color>
+
+    <!-- Card biru (darkened) -->
+    <color name="card_blue">#2C4C60</color>
+
+    <!-- Card putih kebiruan (dark version) -->
+    <color name="card_light">#3A4A4A</color>
+
+    <!-- Judul biru terang (agar terlihat saat dark mode) -->
+    <color name="title_blue">#4FC3F7</color>
+
+    <!-- Warna teks umum -->
+    <color name="text_primary">#FFFFFF</color>
+
+
+
+</resources>
