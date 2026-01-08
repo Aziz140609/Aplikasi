@@ -38,7 +38,7 @@
             android:id="@+id/tvKalkulator"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Kalkulator"
+            android:text="@string/kalkulator"
             android:textSize="22sp"
             android:textStyle="bold"
             android:textColor="@color/title_blue"/>

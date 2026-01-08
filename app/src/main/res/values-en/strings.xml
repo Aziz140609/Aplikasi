@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FristAPK</string>
+
+    <string name="nota_transaksi" translatable="false">Transaction note</string>
+    <string name="menu_utama">Main Menu</string>
+    <string name="menu_lain">Other Menu</string>
+    <string name="lain_lain">Others</string>
+    <string name="formulir">Form</string>
+    <string name="makanan">Food</string>
+    <string name="temperatur">Temperature</string>
+    <string name="kalkulator">Calculator</string>
+    <string name="keluar">Exit</string>
+
+    <string name="anda_yakin_keluar">Are you sure you want to exit?</string>
+    <string name="lanjut">Continue</string>
+    <string name="tidak">No</string>
+
+    <string name="nama">Name : -</string>
+    <string name="nomor">Number : -</string>
+    <string name="alamat">Address : -</string>
+    <string name="jenis_kelamin">Gender : -</string>
+    <string name="agama">Religion : -</string>
+    <string name="hobi">Hobby : -</string>
+    <string name="kembali">Back</string>
+
+    <string name="konversi_suhu">Temperature Conversion</string>
+    <string name="masukan_suhu">Enter Temperature</string>
+    <string name="hasil_Suhu">Temperature Result</string>
+    <string name="konversi">Convert</string>
+
+    <string name="order_food_drink">Order Food / Drink</string>
+    <string name="nama_customer">Customer Name</string>
+
+    <string name="section_makanan">🍜 Food</string>
+    <string name="section_minuman">🥤 Drinks</string>
+
+    <string name="bakso">Meatball Soup</string>
+    <string name="mie_ayam">Chicken Noodles</string>
+    <string name="teh">Tea</string>
+    <string name="air_jeruk">Orange Juice</string>
+
+    <string name="jumlah">Quantity</string>
+    <string name="pesan_sekarang">Order Now</string>
+
+    <string name="kalkulator">Calulator</string>
+
+    <string name="form_pendaftaran">Registration Form</string>
+    <string name="nama_lengkap">Full Name</string>
+    <string name="nomor_handphone">Phone Number</string>
+    <string name="alamat_lengkap">Full Address</string>
+    <string name="agama">Religion</string>
+    <string name="jenis_kelamin">Gender</string>
+    <string name="laki_laki">Male</string>
+    <string name="perempuan">Female</string>
+    <string name="hobi">Hobby</string>
+    <string name="membaca">Reading</string>
+    <string name="makan">Eating</string>
+    <string name="tidur">Sleeping</string>
+    <string name="olahraga">Sports</string>
+    <string name="simpan">Save</string>
+
+    <string name="profile_status">STUDENT OF SMKN 6 SURAKARTA</string>
+    <string name="profile_description">
+I am a student at SMKN 6 SURAKARTA, majoring in PPLG, and currently in my second year at this school
+</string>
+    <string name="contact">Contact :</string>
+    <string name="email">Email :</string>
+    <string name="phone">Phone :</string>
+    <string name="instagram">Instagram :</string>
+    <string name="skill">Skills :</string>
+
+
+
+
+
+
+
+</resources>

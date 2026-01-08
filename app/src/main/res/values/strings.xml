@@ -22,7 +22,87 @@
         <item>Fahrenheit</item>
     </string-array>
 
-    <string name="email">azizachmadjuniar@gmail.com</string>
+    <string name="email" translatable="false">azizachmadjuniar@gmail.com</string>
+    <!-- Card view -->
+    <string name="menu_utama">Menu Utama</string>
+    <string name="menu_lain">Menu Lain</string>
+    <string name="lain_lain">Lain-lain</string>
+    <string name="formulir">Formulir</string>
+    <stri name="makanan">Makanan</stri>
+    <string name="temperatur">Temperatur</string>
+    <string name="kalkulator">Kalkulator</string>
+    <string name="keluar">Keluar</string>
+    <!-- Exit Card -->
+    <string name="anda_yakin_keluar">Anda Yakin Keluar?</string>
+    <string name="lanjut">Lanjut</string>
+    <string name="tidak">Tidak</string>
+
+    <!-- Hasil Form -->
+    <string name="nama">Nama : -</string>
+    <string name="nomor">Nomor : -</string>
+    <string name="alamat">Alamat : -</string>
+    <string name="jenis_kelamin">Jenis Kelamin : -</string>
+    <string name="agama">Agama : -</string>
+    <string name="hobi">Hobi : -</string>
+    <string name="kembali">Kembali</string>
+
+    <!-- Konversi Suhu -->
+    <string name="konversi_suhu">Konversi Suhu</string>
+    <string name="masukan_suhu">Masukan Suhu</string>
+    <string name="hasil_Suhu">Hasil Suhu</string>
+    <string name="konversi">Konversi</string>
+
+    <!-- Food -->
+    <string name="order_food_drink">Order Food / Drink</string>
+    <string name="nama_customer">Nama Customer</string>
+
+    <string name="section_makanan">🍜 Makanan</string>
+    <string name="section_minuman">🥤 Minuman</string>
+
+    <string name="bakso">Bakso</string>
+    <string name="mie_ayam">Mie Ayam</string>
+    <string name="teh">Teh</string>
+    <string name="air_jeruk">Air Jeruk</string>
+
+    <string name="jumlah">Jumlah</string>
+    <string name="pesan_sekarang">Pesan Sekarang</string>
+
+    <!-- Kalkulator -->
+    <string name="kalkulator">Kalulator</string>
+
+    <!-- Formulir -->
+    <string name="form_pendaftaran">Form Pendaftaran</string>
+    <string name="nama_lengkap">Nama Lengkap</string>
+    <string name="nomor_handphone">Nomor Handphone</string>
+    <string name="alamat_lengkap">Alamat Lengkap</string>
+
+    <string name="agama">Agama</string>
+    <string name="jenis_kelamin">Jenis Kelamin</string>
+    <string name="laki_laki">Laki-Laki</string>
+    <string name="perempuan">Perempuan</string>
+
+    <string name="hobi">Hobi</string>
+    <string name="membaca">Membaca</string>
+    <string name="makan">Makan</string>
+    <string name="tidur">Tidur</string>
+    <string name="olahraga">Olahraga</string>
+
+    <string name="simpan">Simpan</string>
+
+    <!-- Profile -->
+    <string name="profile_status">SISWA SMKN 6 SURAKARTA</string>
+
+    <string name="profile_description">
+Aku adalah seorang siswa di SMKN 6 SURAKARTA dan mengambil jurusan PPLG serta sekarang berada di tahun ke-2 di sekolah ini
+</string>
+
+    <string name="contact">Kontak :</string>
+    <string name="email">Email :</string>
+    <string name="phone">No :</string>
+    <string name="instagram">Instagram :</string>
+
+    <string name="skill">Skill :</string>
+
 
 
 </resources>

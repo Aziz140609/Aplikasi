@@ -43,7 +43,7 @@
             android:id="@+id/NamA"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Nama: -"
+            android:text="@string/nama"
             android:textSize="16sp"
             android:layout_marginTop="6dp" />
 
@@ -51,7 +51,7 @@
             android:id="@+id/Nomerr"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Nomor: -"
+            android:text="@string/nomor"
             android:textSize="16sp"
             android:layout_marginTop="6dp" />
 
@@ -59,7 +59,7 @@
             android:id="@+id/etAlamatt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Alamat: -"
+            android:text="@string/alamat"
             android:textSize="16sp"
             android:layout_marginTop="6dp" />
 
@@ -67,7 +67,7 @@
             android:id="@+id/tvKelamin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Jenis Kelamin: -"
+            android:text="@string/jenis_kelamin"
             android:textSize="16sp"
             android:layout_marginTop="6dp" />
 
@@ -75,7 +75,7 @@
             android:id="@+id/tvAgama"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Agama: -"
+            android:text="@string/agama"
             android:textSize="16sp"
             android:layout_marginTop="6dp" />
 
@@ -83,7 +83,7 @@
             android:id="@+id/tvHobi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Hobi: -"
+            android:text="@string/hobi"
             android:textSize="16sp"
             android:layout_marginTop="6dp"
             android:layout_marginBottom="10dp" />
@@ -98,7 +98,7 @@
             android:id="@+id/btnKembali"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Kembali"
+            android:text="@string/kembali"
             android:textAllCaps="false"
             android:textSize="16sp"
             android:padding="10dp" />
